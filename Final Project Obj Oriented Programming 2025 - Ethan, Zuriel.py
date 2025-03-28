@@ -31,7 +31,7 @@ class Student:
             count += len(grades)
         return total / count if count else 0
 
-    #Converting the number grade toa letter grad
+    #Converting the number grade to a letter grade
     def get_letter_grade(self):
         avg = self.calculate_average()
         if avg >= 90:
@@ -60,19 +60,23 @@ class StudentGradingSystem:
 
     #Prompts for student to enter their details and adding it to the system
     def add_student(self):
+        #Prompt for user to input their ID
         student_id = input("Enter student ID: ")
         if student_id in self.students:
             print("Student ID already exists.")
             return
+        #Prompt for user to input name
         name = input("Enter student name: ")
         self.students[student_id] = Student(student_id, name)
         self.save_data()
 
     def add_course(self):
+        #Prompt for user to input course code
         course_code = input("Enter course code: ")
         if course_code in self.courses:
             print("Course already exists.")
             return
+        #Prompt for user to input course name
         course_name = input("Enter course name: ")
         self.courses[course_code] = Course(course_code, course_name)
         self.save_data()
