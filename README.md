@@ -46,6 +46,7 @@ FUTURE IMPROVEMENTS
 3. Adding a feature where studnet transcripts are displayed
 
 AUTHORS
+
 Zuriel Tolibas - 100920093 - zuriel.tolibas@ontariotechu.net
 
 Ethan Baird - -ethan.baird@ontariotechu.net
